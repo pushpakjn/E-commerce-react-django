@@ -28,7 +28,7 @@ export const loginAction = (email, password) => async (dispatch) => {
         }
 
         const {data} = await axios.post(
-            '/api/user/login/',
+            'https://ecommercedjango-dlr8.onrender.com/api/user/login/',
             {'email':email, 'password':password},
             config
             )
@@ -71,7 +71,7 @@ export const registerAction = (email, username, first_name, last_name, password,
 
 
         const {data} = await axios.post(
-            '/api/user/register/',
+            'https://ecommercedjango-dlr8.onrender.com/api/user/register/',
             {
                 'email':email,
                 'username':username,

@@ -3,7 +3,7 @@ import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_SHIPPING } from "../constant
 
 
 export const addToCart = (slug, qty) => async (dispatch, getState) =>{
-    const {data} = await axios.get(`/api/products/${slug}`)
+    const {data} = await axios.get(`https://ecommercedjango-dlr8.onrender.com/api/products/${slug}`)
     dispatch({
         type: CART_ADD_ITEM,
         payload: {

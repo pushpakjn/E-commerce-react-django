@@ -36,7 +36,7 @@ export const getProfileDetails = () => async(dispatch, getState) =>{
         }
 
         const {data} = await axios.get(
-            `/api/user/profile/update/${userInfo.username}`,
+            `https://ecommercedjango-dlr8.onrender.com/api/user/profile/update/${userInfo.username}`,
             config
         )
 
@@ -85,7 +85,7 @@ export const profileUpdateDetailsAction = (email, username, first_name, last_nam
         if(userInfo.username !== username) { moreData.username = username }
 
         const {data} = await axios.put(
-            `/api/user/profile/update/${userInfo.username}`,
+            `https://ecommercedjango-dlr8.onrender.com/api/user/profile/update/${userInfo.username}`,
             moreData,
             config
             )
@@ -133,7 +133,7 @@ export const userUpdatePasswordAction = (oldPassword, password, password2) => as
         }
 
         const {data} = await axios.put(
-            '/api/user/update_password/',
+            'https://ecommercedjango-dlr8.onrender.com/api/user/update_password/',
             {
                 "old_password": oldPassword,
                 "password": password,

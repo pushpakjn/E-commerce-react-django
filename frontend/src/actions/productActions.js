@@ -14,7 +14,7 @@ export const listProducts = () => async (dispatch) => {
     try{
         dispatch({type: PRODUCT_LIST_REQUEST})
 
-        const {data} = await axios.get('/api/products')
+        const {data} = await axios.get('https://ecommercedjango-dlr8.onrender.com/api/products')
 
         dispatch({
             type:PRODUCT_LIST_SUCCESS,
@@ -36,7 +36,7 @@ export const productDetails = (slug) => async (dispatch) => {
     try{
         dispatch({type: PRODUCT_DETAILS_REQUEST})
 
-        const {data} = await axios.get(`/api/products/${slug}`)
+        const {data} = await axios.get(`https://ecommercedjango-dlr8.onrender.com/api/products/${slug}`)
 
         dispatch({type:PRODUCT_DETAILS_SUCCESS, payload:data})
 
