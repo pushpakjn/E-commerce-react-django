@@ -2,6 +2,7 @@ from django.db import models
 from django.db.models.signals import pre_save
 from django.utils.text import slugify
 from django.conf import settings
+from cloudinary.models import CloudinaryField
 
 User = settings.AUTH_USER_MODEL
 
@@ -11,7 +12,7 @@ class Product(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=125)
     slug = models.SlugField(blank=True, null=True)
-    image = models.ImageField(upload_to="ecommerce-products")
+    image = CloudinaryField("image")
     brand = models.CharField(max_length=125, blank=True, null=True)
     category = models.ForeignKey(
         "Category", on_delete=models.CASCADE, blank=True, null=True

@@ -4,6 +4,9 @@ from datetime import timedelta
 import dj_database_url
 import environ
 import cloudinary_storage
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env()
@@ -182,13 +185,19 @@ MEDIA_ROOT = "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Cloudinary
-CLOUDINARY_STORAGE = {
-    "CLOUD_NAME": "Blog",
-    "API_KEY": "253397266762396",
-    "API_SECRET": "Dprx7cx446mEToPK5-AaWj_hdr8",
-    # "CLOUD_NAME": env("CLOUD_NAME"),
-    # "API_KEY": env("API_KEY"),
-    # "API_SECRET": env("API_SECRET"),
-}
+# CLOUDINARY_STORAGE = {
+#     "CLOUD_NAME": "Blog",
+#     "API_KEY": "253397266762396",
+#     "API_SECRET": "Dprx7cx446mEToPK5-AaWj_hdr8",
+#     # "CLOUD_NAME": env("CLOUD_NAME"),
+#     # "API_KEY": env("API_KEY"),
+#     # "API_SECRET": env("API_SECRET"),
+# }
+
+cloudinary.config(
+    cloud_name="dplbssi25",
+    api_key="634879922782463",
+    api_secret="sRyY2qGTzVjcIRvrcuvT4F-6ggo",
+)
 
 DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
