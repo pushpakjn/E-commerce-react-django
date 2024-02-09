@@ -73,11 +73,23 @@ SIMPLE_JWT = {
 }
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-# CORS_ALLOWED_ORIGINS = [
-#     "https://e-commerce-react-django.vercel.app", 
-#     "http://localhost:3000",  # React
-#     # '*'
-#     ]
+CORS_ALLOWED_HEADERS = [
+    'Accept',
+    'Content-Type',
+    'Authorization',
+    'X-CSRFToken',
+    'X-Requested-With',
+    'If-Match',
+    'If-Modified-Since',
+    'If-None-Match',
+    'If-Unmodified-Since',
+    'Range',
+]
+CORS_ALLOWED_ORIGINS = [
+    "https://e-commerce-react-django.vercel.app", 
+    "http://localhost:3000",  # React
+    # '*'
+    ]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
