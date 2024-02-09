@@ -131,8 +131,8 @@ AUTH_USER_MODEL = "accounts.UserModel"
 #         "NAME": BASE_DIR / "db.sqlite3",
 #     }
 # }
-GG = os.environ.get("DATABASE_URL")
-print(GG)
+# GG = os.environ.get("DATABASE_URL")
+# print(GG)
 DATABASES = {
     "default": dj_database_url.parse(env('DATABASE_URL'))
 }
