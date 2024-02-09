@@ -11,7 +11,7 @@ class Product(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=125)
     slug = models.SlugField(blank=True, null=True)
-    image = models.ImageField(upload_to="products/")
+    image = models.ImageField(upload_to="ecommerce-products")
     brand = models.CharField(max_length=125, blank=True, null=True)
     category = models.ForeignKey(
         "Category", on_delete=models.CASCADE, blank=True, null=True
