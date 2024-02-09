@@ -37,6 +37,7 @@ export const productDetails = (slug) => async (dispatch) => {
         dispatch({type: PRODUCT_DETAILS_REQUEST})
 
         const {data} = await axios.get(`https://ecommercedjango-dlr8.onrender.com/api/products/${slug}`)
+        console.log(data)
 
         dispatch({type:PRODUCT_DETAILS_SUCCESS, payload:data})
 
