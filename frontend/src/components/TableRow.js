@@ -16,7 +16,7 @@ function TableRow(props) {
         <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
             <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                 <Avatar
-                    img={product.image}
+                    img={`https://res.cloudinary.com/dplbssi25/${product.image}`}
                     size="lg"
                     // className='float-left'
                 />

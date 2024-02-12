@@ -47,7 +47,7 @@ function ProductDetails() {
         <div className="pt-6 ">
           <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
             <div className="aspect-h-4 aspect-w-3  overflow-hidden rounded-lg lg:block">
-              <img src={product.image} alt="Two each of gray, white, and black shirts laying flat." className="h-full w-full object-cover object-center" />
+              <img src={`https://res.cloudinary.com/dplbssi25/${product.image}`} alt="Two each of gray, white, and black shirts laying flat." className="h-full w-full object-cover object-center" />
             </div>
             <div className="lg:grid lg:grid-cols-1 lg:gap-y-8 py-3">
               <div>

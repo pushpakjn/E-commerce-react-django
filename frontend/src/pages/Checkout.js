@@ -89,7 +89,7 @@ function Checkout() {
                                         <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                             <Link to={`/product/${product.slug}`}>
                                             <Avatar
-                                                img={product.image}
+                                                img={`https://res.cloudinary.com/dplbssi25/${product.image}`}
                                                 size="lg"
                                             />
                                             </Link>

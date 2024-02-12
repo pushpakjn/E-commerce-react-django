@@ -12,7 +12,7 @@ function ProductList({product}) {
       imgAlt={product.name}
       imgSrc={`https://res.cloudinary.com/dplbssi25/${product.image}`}
     >
-      console.log(product.image)
+      {/* console.log(product.image) */}
 
       <Link to={`/product/${product.slug}`}>
         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">

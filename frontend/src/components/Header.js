@@ -40,7 +40,7 @@ function Header() {
       <Navbar className="container">
             <NavLink to="/">
               <span className="text-cyan-700 self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-              Shop <span className='text-orange-500'>Shop</span>
+              Fashion <span className='text-orange-500'>Novel</span>
               </span>
             </NavLink>
             <div className="flex md:order-3 text-cyan-700">

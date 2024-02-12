@@ -7,8 +7,8 @@ export default function FooterWithLogo() {
     <Footer container>
       <div className="w-full text-center">
         <Footer.Copyright
-          by="Omar Reda"
-          year={2023}
+          by="Pushpak Jain"
+          year={2024}
         />
       </div>
     </Footer>
