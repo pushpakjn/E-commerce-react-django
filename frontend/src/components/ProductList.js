@@ -12,6 +12,8 @@ function ProductList({product}) {
       imgAlt={product.name}
       imgSrc={product.image}
     >
+      {/* console.log(product.image) */}
+
       <Link to={`/product/${product.slug}`}>
         <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
           <p>

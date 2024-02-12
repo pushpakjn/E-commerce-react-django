@@ -91,7 +91,8 @@ CORS_ALLOW_CREDENTIALS = False
 #     'If-Unmodified-Since',
 #     'Range',
 # ]
-CORS_ALLOWED_ORIGINS = ['https://e-commerce-react-django.vercel.app']
+CORS_ALLOWED_ORIGINS = ['https://e-commerce-react-django.vercel.app',
+                        'http://localhost:3000']
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
